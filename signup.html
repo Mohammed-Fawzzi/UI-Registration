@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 text-center animate__animated animate__slideInRight">
+
+        <div class="row rounded-2 p-3  shadow box-area h-auto">
+        <div class="col-md-6 right-box">
+            <div class="row align-items-center">
+    
+                <div class="header-text mb-4">
+                    <div class="header-text-icon mx-auto rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-user fs-2"></i>
+                    </div>
+                    <h2 class="text-white my-2">Create Account!</h2>
+                    <p class="text-white fs-5">Sign up if you don't have an account.</p>
+                </div>
+    
+                <div class="input-group mb-4">
+                    <input type="text" id="userName" required>
+                    <label for="userName">Name :</label>
+                    <i class="fa-regular fa-circle-user"></i>
+                    <p id="userNameAlert" class="text-warning mt-1 mb-3 d-none">include at least 3 letters starting with capital</p>    
+                </div>
+
+                <div class="input-group mb-4">
+                    <input type="text" id="userEmail" required>
+                    <label for="userEmail">Email :</label>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p id="userEmailAlert" class="text-warning mt-1 mb-3 d-none">name@example.com</p>
+                </div>
+    
+                <div class="input-group mb-4">
+                    <input type="password" id="userPassword" required>
+                    <label for="userPassword">Password :</label>
+                    <i class="fa-solid fa-lock"></i>
+                    <p id="userPasswordAlert" class="text-warning mt-1 mb-3 d-none">you must strength your password, from 5 to 15 characters</p>
+                </div>
+    
+                <div>
+                    <p class="text-success d-none" id="confirmMsg">Success</p>
+                    <p class="text-danger d-none mb-3" id="accountExistMsg">This account is already exist ! Try another one.</p>
+                    <p class="text-danger d-none mb-3" id="tryAgainMsg">Sign up failed ! Try again</p>
+                </div>
+
+                <div class="input-group my-3">
+                    <button class="btn btn-outline-info w-100 fs-6" id="signUpBtn">Sign Up</button>
+                </div>
+
+                <div class="row">
+                    <small class="text-white">Already have an account? <a href="index.html">Log in</a></small>
+                </div>
+                
+                </div>
+            </div> 
+    
+            <div class="col-md-6 rounded-1 d-flex justify-content-center align-items-center flex-column left-box">
+                <div class="featured-image mb-3">
+                <img src="imgs/land.png" class="img-fluid w-100">
+                </div>
+                <p class="fs-2">Hello, Friend</p>
+                <small class=text-wrap text-center">Enter your details and start journey with us.</small>
+            </div> 
+        </div>
+        
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
